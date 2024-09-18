@@ -7,6 +7,11 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+
         <title>Home</title>
     </head>
     <style>
@@ -20,107 +25,159 @@
             --primary-color: #1abc9c;
             --gray-accent: #5a5a5a;
             --background-color: #f7f8fa;
+            --dark-accent: #252628;
             font-family: 'Montserrat', sans-serif;
         }
-        body {
+        header {
             background-color: var(--background-color);
         }
-        .nav_bar {
+        nav {
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            padding: 1em;
-            border: 1px solid black;
+            justify-content: space-between;
+            padding: 0 6%;
         }
         .company_logo {
-            width: 50%;
-            max-width: 150px;
-            max-height: 60px;
-            margin-left: -1em;
+            width: 10em;
+            margin-left: -17px;
         }
         .company_logo img {
-            width: 100%;
-            height: 100%;
+            max-width: 100%;
         }
-        .mobile_menu_open {
-            background: none;
-            box-shadow: none;
-            border: 1px solid var(--gray-accent);
-            color: var(--gray-accent);
-            padding: 10px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        .mobile_menu_open:hover {
-            color: var(--primary-color);
-            border: 1px solid var(--primary-color);
-        }
-        .mobile_menu {
+        .menu {
             display: none;
-            position: absolute;
-            top: 100px;
-            width: 90%;
-            margin: 0 auto;
         }
-        .menu_active {
-            display: block;
-        }
-        .mobile_menu_links {
-            display: block;
+        .menu_links {
+            padding: 1em;
             text-decoration: none;
             color: var(--gray-accent);
-            font-weight: 500;
-            padding: 1em 10px;
             transition: 200ms;
+            font-weight: 450;
         }
-        .mobile_menu_links:hover {
+        .menu_links:hover {
             color: var(--primary-color);
             background-color: white;
             transition: 200ms;
         }
-        @media (min-width: 992px) {
-            .mobile_menu {
+        .mobile_menu_btn {
+            padding: 5px 10px;
+            border: 1px solid var(--gray-accent);
+            background-color: var(--background-color);
+            color: var(--gray-accent);
+            border-radius: 5px;
+            box-shadow: none;
+            font-size: 1.25rem;
+            cursor: pointer;
+            transition: 200ms;
+        }
+        .mobile_menu_btn:hover {
+            color: var(--primary-color);
+            border: 1px solid var(--primary-color);
+            transition: 200ms;
+        }
+        .mobile_menu_hidden {
+            max-height: 0;
+            overflow: hidden;
+            transition: 300ms;
+        }
+
+        .mobile_menu {
+            padding: 1em;
+            transition: 300ms;
+        }
+        .mobile_menu_hidden {
+            height: 0;
+            transition: 300ms;
+            padding: 0;
+        }
+        .mobile_menu_links {
+            display: block;
+            font-weight: 450;
+            text-decoration: none;
+            color: var(--gray-accent);
+            padding: 1em 2em;
+        }
+        .mobile_menu_links:hover {
+            background-color: white;
+            color: var(--primary-color);
+        }
+        .contact_section {
+            display: none;
+        }
+
+        @media (min-width: 780px) {
+            .menu {
                 display: block;
-                position: static;
-                border: 1px solid red;
-                width: fit-content;
-                padding: none;
-                margin: none;
-                justify-self: flex-end;
             }
-            .mobile_menu_links {
-                display: inline;
-            }
-            .mobile_menu_open {
+            .mobile_menu_btn {
                 display: none;
+            }
+            .mobile_menu {
+                display: none;
+            }
+        }
+
+        @media (min-width: 500px) {
+            .contact_section {
+                display: block;
+                background-color: var(--dark-accent);
+            }
+            .social_links {
+                display: flex;
+                justify-content: space-around;
+                color: white;
             }
         }
     </style>
     <body>
         <header>
-            <nav class="nav_bar">
-                <a class="company_logo" href="">
+            <div class="contact_section">
+                <div class="social_links">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-youtube"></i>
+
+                    <a href="" class="btn">BOOK A DEMO</a>
+                </div>
+            </div>
+            <nav>
+                <a href="#" class="company_logo">
                     <img
                         src="assets/images/IndTutorBlackLogo.png"
-                        alt="India Tutors Logo"
+                        alt="IndiaTutors Logo"
                     />
                 </a>
-                <div class="mobile_menu">
-                    <a href="" class="mobile_menu_links">HOME</a>
-                    <a href="" class="mobile_menu_links">ABOUT</a>
-                    <a href="" class="mobile_menu_links">BOOK DEMO</a>
-                    <a href="" class="mobile_menu_links">FREE WORKSHOPS</a>
-                </div>
-                <button class="mobile_menu_open">
-                    <i class="fa fa-bars" style="font-size: 1rem"></i>
+                <button class="mobile_menu_btn">
+                    <i class="fa fa-bars"></i>
                 </button>
+                <div class="menu">
+                    <a href="" class="menu_links">HOME</a>
+                    <a href="" class="menu_links">ABOUT</a>
+                    <a href="" class="menu_links">BOOK DEMO</a>
+                    <a href="" class="menu_links">FREE WORKSHOPS</a>
+                </div>
             </nav>
+            <div class="mobile_menu mobile_menu_hidden">
+                <a href="" class="mobile_menu_links">HOME</a>
+                <a href="" class="mobile_menu_links">ABOUT</a>
+                <a href="" class="mobile_menu_links">BOOK DEMO</a>
+                <a href="" class="mobile_menu_links">FREE WORKSHOPS</a>
+            </div>
         </header>
+        <main>
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+                recusandae, consequatur reprehenderit ad, deserunt adipisci
+                vitae, esse itaque inventore blanditiis atque perspiciatis rem
+                ut cupiditate sit nesciunt omnis reiciendis placeat?
+            </div>
+        </main>
         <script>
-            const menuBtn = document.querySelector('.mobile_menu_open');
-
+            const menuBtn = document.querySelector('.mobile_menu_btn');
+            const menu = document.querySelector('.mobile_menu');
             menuBtn.addEventListener('click', function () {
-                console.log('Hello');
+                menu.classList.toggle('mobile_menu_hidden');
             });
         </script>
     </body>
