@@ -9,8 +9,13 @@ footer {
 }
 
 .footer_rows {
+    width: 90%;
+    margin: 1em auto;
 }
 
+.footer_rows h2 {
+    margin-bottom: 10px;
+}
 .footer_logo {
     max-width: 261px;
 }
@@ -19,6 +24,8 @@ footer {
     list-style: none;
 }
 .quick_links {
+    display: block;
+    width: fit-content;
     color: white;
     text-decoration: none;
     transition: 200ms;
@@ -30,6 +37,7 @@ footer {
 .popular_courses {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 .popular_courses--image {
     width: 100px;
@@ -49,6 +57,10 @@ footer {
 }
 .subscribe input::placeholder {
     font-family: 'Montserrat', sans-serif;
+}
+.subscribe input:focus {
+    border: none;
+    outline: none;
 }
 .subscribe button {
     padding: 0;
@@ -78,24 +90,18 @@ footer {
         justify-content: space-around;
     }
     .right_column div {
-        width: 40%;
+        width: 50%;
     }
     .quick_links_footer {
-        width: 40%;
+        width: 50%;
     }
     .indtutor_footer {
-        width: 40%;
+        width: 50%;
     }
 }
 
 @media (min-width: 1200px) {
     .footer_rows {
         display: flex;
-    }
-    .left_column {
-        width: 50%;
-    }
-    .right_column {
-        width: 50%;
     }
 }
