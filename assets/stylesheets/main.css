@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color: #1abc9c;
+    --gray-accent: #5a5a5a;
+    --background-color: #f7f8fa;
+    --dark-accent: #252628;
+    --darker-gray: #f2f4f6;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    width: 100vw;
+}
+main {
+    min-height: 50vh;
+    background-color: var(--background-color);
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: var(--primary-color);
+    transition: 300ms;
+}
+.btn {
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to right, white 50%, var(--primary-color) 50%);
+    background-size: 300% 100%;
+    background-position: right bottom;
+    transition: background 0.5s ease-out;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 12px;
+}
+.btn:hover {
+    background-position: left bottom;
+    color: var(--primary-color);
+    padding: 7px 19px;
+    border: 1px solid var(--primary-color);
+}
+.breadcrumbs {
+    color: var(--gray-accent);
+    font-weight: 400;
+    background-color: var(--darker-gray);
+    padding: 70px 6%;
+}
+.breadcrumbs--heading {
+    color: var(--dark-accent);
+    margin-bottom: 1em;
+}
+.breadcrumbs--link {
+    color: var(--gray-accent);
+    font-weight: 700;
+    transition: 300ms;
+}
+.breadcrumbs--arrows {
+    font-size: 0.8rem;
+    font-weight: 900;
+}

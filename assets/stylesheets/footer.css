@@ -11,6 +11,7 @@ footer {
 .footer_rows {
     width: 90%;
     margin: 1em auto;
+    margin-bottom: 6em;
 }
 
 .footer_rows h2 {
@@ -79,6 +80,9 @@ footer {
 .subscribe button i:hover {
     transform: rotate(45deg);
     transition: 300ms;
+}
+.copyright_statement {
+    padding: 3em 0;
 }
 @media (min-width: 700px) {
     .left_column {
