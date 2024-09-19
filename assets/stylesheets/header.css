@@ -1,6 +1,7 @@
 /*Header Styling Starts*/
 header {
     background-color: var(--background-color);
+    width: 100vw;
 }
 nav {
     display: flex;
@@ -54,11 +55,13 @@ nav {
 
 .mobile_menu {
     padding: 1em;
-    transition: 300ms;
+    transition: 300ms ease-in-out;
+    opacity: 1;
 }
 .mobile_menu_hidden {
     height: 0;
-    transition: 300ms;
+    opacity: 0;
+    transition: 300ms ease-in-out;
     padding: 0;
 }
 .mobile_menu_links {

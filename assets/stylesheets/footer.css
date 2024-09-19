@@ -7,111 +7,95 @@ footer {
     color: white;
     padding-top: 2em;
 }
+
 .footer_rows {
-    display: flex;
-    margin-bottom: 1em;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    gap: 1em;
-}
-.right_column,
-.left_column {
-    justify-content: space-around;
-    flex-direction: column;
-    gap: 1em;
-    display: flex;
-}
-.right_column div,
-.left_column div {
-    margin: 1em;
-}
-@media (min-width: 600px) {
-    .right_column,
-    .left_column {
-        flex-direction: row;
-    }
-}
-@media (min-width: 1000px) {
-    .footer_rows {
-        flex-direction: row;
-        align-items: normal;
-    }
-    .right_column,
-    .left_column {
-        flex-direction: row;
-    }
-}
-.indtutor_footer {
-    width: 50%;
-    min-width: 300px;
-}
-.quick_links_footer {
-    min-width: 150px;
-}
-.quick_links_footer h2 {
-    margin-bottom: 1em;
 }
 
 .footer_logo {
-    max-width: 15em;
+    max-width: 261px;
 }
 
-.quick_links,
-.popular_courses--link {
-    display: block;
+.quick_links_footer ul {
+    list-style: none;
+}
+.quick_links {
     color: white;
     text-decoration: none;
     transition: 200ms;
 }
-.quick_links:hover,
-.popular_courses--link:hover {
+.quick_links:hover {
     color: var(--primary-color);
     transition: 200ms;
 }
 .popular_courses {
     display: flex;
     align-items: center;
-    gap: 5px;
 }
 .popular_courses--image {
-    width: 10em;
+    width: 100px;
 }
 .popular_courses--link {
-    font-size: 1rem;
-    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    transition: 200ms;
 }
-
-.popular_courses {
-}
-.subscribe {
-    min-width: 290px;
+.popular_courses--link:hover {
+    color: var(--primary-color);
+    transition: 200ms;
 }
 .subscribe input {
-    height: 3em;
-    min-width: 250px;
+    height: 2.5em;
     padding: 5px 10px;
 }
 .subscribe input::placeholder {
     font-family: 'Montserrat', sans-serif;
 }
 .subscribe button {
-    color: white;
-    box-shadow: none;
+    padding: 0;
+    margin-left: -10px;
     border: none;
+    background: var(--primary-color);
+    height: 2.5em;
+    width: 2.5em;
+    box-shadow: none;
+    color: white;
     cursor: pointer;
-
-    height: 3em;
-    width: 3em;
-    margin-left: -5px;
-    background-color: #1abc9c;
 }
 .subscribe button i {
-    padding: 1em;
     transition: 300ms;
 }
 .subscribe button i:hover {
     transform: rotate(45deg);
     transition: 300ms;
 }
-/*Footer Styling Ends*/
+@media (min-width: 700px) {
+    .left_column {
+        display: flex;
+        justify-content: space-around;
+    }
+    .right_column {
+        display: flex;
+        justify-content: space-around;
+    }
+    .right_column div {
+        width: 40%;
+    }
+    .quick_links_footer {
+        width: 40%;
+    }
+    .indtutor_footer {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer_rows {
+        display: flex;
+    }
+    .left_column {
+        width: 50%;
+    }
+    .right_column {
+        width: 50%;
+    }
+}
