@@ -89,12 +89,16 @@ footer {
         display: flex;
         justify-content: space-around;
     }
-    .right_column div {
+    .subscribe {
+        width: 40%;
+    }
+    .popular_courses_section {
         width: 50%;
     }
     .quick_links_footer {
-        width: 50%;
+        width: 40%;
     }
+
     .indtutor_footer {
         width: 50%;
     }
