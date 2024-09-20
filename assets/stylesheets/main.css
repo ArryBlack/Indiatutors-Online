@@ -35,15 +35,13 @@ li {
     background-size: 300% 100%;
     background-position: right bottom;
     transition: background 0.5s ease-out;
-    padding: 8px 20px;
-    border-radius: 20px;
-    font-weight: 500;
-    font-size: 12px;
 }
 .btn:hover {
+    transition: background 0.5s ease-out;
+
     background-position: left bottom;
     color: var(--primary-color);
-    padding: 7px 19px;
+
     border: 1px solid var(--primary-color);
 }
 /*Breadcrumb styling starts*/
@@ -54,12 +52,17 @@ li {
     padding: 70px 6%;
 }
 .breadcrumbs--heading {
-    color: var(--dark-accent);
+    color: var(--gray-accent);
     margin-bottom: 1em;
 }
 .breadcrumbs--link {
     color: var(--gray-accent);
     font-weight: 700;
+    transition: 300ms;
+}
+.breadcrumbs--link:hover {
+    color: var(--primary-color);
+    transition: 300ms;
 }
 .breadcrumbs--arrows {
     font-size: 0.8rem;
@@ -116,13 +119,15 @@ li {
 .about--desciption_list li {
     margin: 1em 0;
     margin-left: 2em;
+    position: relative;
 }
 .about--desciption_list li::before {
     content: '\2713';
     background-color: var(--primary-color);
     padding: 1px 5px;
     font-weight: 700;
-
+    position: absolute;
+    left: -2em;
     color: white;
     border-radius: 100%;
 }
@@ -178,3 +183,46 @@ li {
     }
 }
 /*Styling for founders section ends*/
+
+/*Styling for free workshops section starts*/
+
+.workshops {
+    padding: 1em 6%;
+}
+.workshop {
+    background-color: white;
+}
+.workshop--data {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.workshop--thumbnail {
+    width: 100%;
+}
+.workshop--title {
+    font-size: 1rem;
+    margin-bottom: 1em;
+}
+.workshop--description {
+    margin-bottom: 1em;
+}
+.workshop--book_demo {
+    border-radius: 5px;
+    display: block;
+    width: fit-content;
+    align-self: center;
+    font-size: 1rem;
+    padding: 1em 2em;
+}
+@media (min-width: 800px) {
+    .workshop {
+        display: flex;
+    }
+    .workshop--thumbnail {
+        max-width: 300px;
+        max-height: 210px;
+    }
+}
+/*Styling for free workshops section ends*/

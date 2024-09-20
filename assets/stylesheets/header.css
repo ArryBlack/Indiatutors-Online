@@ -16,6 +16,12 @@ nav {
 .company_logo img {
     max-width: 100%;
 }
+.header_btn {
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 12px;
+}
 .menu {
     display: none;
 }
