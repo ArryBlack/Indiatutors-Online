@@ -6,6 +6,7 @@
 }
 
 :root {
+    font-size: 16px;
     --primary-color: #1abc9c;
     --gray-accent: #5a5a5a;
     --background-color: #f7f8fa;
@@ -23,9 +24,9 @@ main {
 a {
     text-decoration: none;
 }
-a:hover {
-    color: var(--primary-color);
-    transition: 300ms;
+
+li {
+    list-style: none;
 }
 .btn {
     text-decoration: none;
@@ -45,6 +46,7 @@ a:hover {
     padding: 7px 19px;
     border: 1px solid var(--primary-color);
 }
+/*Breadcrumb styling starts*/
 .breadcrumbs {
     color: var(--gray-accent);
     font-weight: 400;
@@ -58,9 +60,79 @@ a:hover {
 .breadcrumbs--link {
     color: var(--gray-accent);
     font-weight: 700;
-    transition: 300ms;
 }
 .breadcrumbs--arrows {
     font-size: 0.8rem;
     font-weight: 900;
+    margin: 0 5px;
 }
+/*Breadcrumb styling ends*/
+
+/*Styling for about section starts*/
+.about {
+    padding: 3em 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about--image {
+    display: block;
+    width: 100%;
+    max-width: 690px;
+
+    border: 20px solid white;
+}
+.about--desciption {
+    max-width: 690px;
+}
+.about--title {
+}
+.title {
+    color: var(--primary-color);
+    margin: 1em 15px;
+    text-transform: uppercase;
+}
+.title_background {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(214, 214, 214, 0.6);
+    font-size: 1.75rem;
+    font-weight: 900;
+    color: transparent;
+    display: none;
+    text-transform: uppercase;
+}
+.about--desciption_heading {
+    color: var(--gray-accent);
+    margin: 1em 0;
+}
+.about--desciption_list li {
+    margin: 1em 0;
+    margin-left: 2em;
+}
+.about--desciption_list li::before {
+    content: '\2713';
+    background-color: var(--primary-color);
+    padding: 1px 5px;
+    font-weight: 700;
+
+    color: white;
+    border-radius: 100%;
+}
+
+@media (min-width: 990px) {
+    .about {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2em;
+        align-items: flex-start;
+    }
+    .about--image {
+        display: block;
+        width: 50%;
+        border: 20px solid white;
+    }
+    .about--desciption {
+        width: 50%;
+    }
+}
+/*Styling for about section ends*/
