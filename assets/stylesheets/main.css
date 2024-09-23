@@ -34,11 +34,11 @@ li {
     background: linear-gradient(to right, white 50%, var(--primary-color) 50%);
     background-size: 400% 100%;
     background-position: right bottom;
-    transition: background 700ms ease-out;
+    transition: 700ms ease-out;
     border: 2px solid var(--primary-color);
 }
 .btn:hover {
-    transition: background 700ms ease-out;
+    transition: 700ms ease-out;
 
     background-position: left bottom;
     color: var(--primary-color);
@@ -436,7 +436,7 @@ nav {
 /*Card Design*/
 .subject_card {
     width: 100%;
-    max-width: 290px;
+    max-width: 280px;
     margin: 2em auto;
     background-color: white;
 }
@@ -544,8 +544,9 @@ nav {
 .subject--swiper_next,
 .subject--swiper_prev {
     cursor: pointer;
-    width: 30px; /* Adjust size as needed */
-    height: 30px;
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    font-weight: 700;
     background: var(--darker-gray); /* Background color */
     color: var(--dark-accent);
     border-radius: 50%; /* Circular buttons */
@@ -553,14 +554,19 @@ nav {
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 30%; /* Center vertically */
+    top: 50%; /* Center vertically */
     transform: translateY(-50%);
     z-index: 10; /* Ensure buttons are above slides */
-    opacity: 0.7;
+    transition: 300ms;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 .subject--swiper_next:hover,
 .subject--swiper_prev:hover {
-    opacity: 1;
+    background-color: var(--primary-color);
+    color: white;
+    transition: 300ms;
 }
 
 .subject--swiper_next {
@@ -570,16 +576,62 @@ nav {
 .subject--swiper_prev {
     left: 10px; /* Positioning */
 }
-@media (max-width: 500px) {
-    .subject--swiper_next {
-        display: none;
-    }
+.subjectSwiper:hover .subject--swiper_next,
+.subjectSwiper:hover .subject--swiper_prev {
+    opacity: 1;
+    visibility: visible;
+}
 
-    .subject--swiper_prev {
-        display: none;
+/*Styling for subject carousel ends*/
+
+/*Styling for cateogries section starts*/
+.categories {
+    padding: 3em 6%;
+}
+.categories--container {
+    display: grid;
+    gap: 20px; /* Spacing between items */
+    grid-template-columns: 1fr; /* Single column by default */
+}
+
+/* For medium screens (e.g., tablets, 768px and above) */
+@media (min-width: 768px) {
+    .categories--container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
     }
 }
-/*Styling for subject carousel ends*/
+
+/* For large screens (e.g., small desktops, 1024px and above) */
+@media (min-width: 1024px) {
+    .categories--container {
+        grid-template-columns: repeat(3, 1fr); /* Three columns */
+    }
+}
+
+/* For extra-large screens (e.g., large desktops, 1440px and above) */
+@media (min-width: 1440px) {
+    .categories--container {
+        grid-template-columns: repeat(4, 1fr); /* Four columns */
+    }
+}
+.category {
+    display: block;
+    padding: 1em 2em;
+    border-radius: 5px;
+    background-color: white;
+    font-weight: 800;
+    color: var(--gray-accent);
+    transition: color 300ms;
+    margin-top: 1em;
+}
+.category span {
+    margin-left: 1em;
+}
+.category:hover {
+    color: var(--primary-color);
+    transition: color 300ms;
+}
+/*Styling for cateogries section ends*/
 
 /*Styling for about section starts*/
 .about {
@@ -598,14 +650,10 @@ nav {
 .about--desciption {
     max-width: 690px;
 }
-.about--title {
-    position: relative;
-    display: inline-block;
-}
+
 .title {
     position: relative;
     color: var(--primary-color);
-    margin: 1em 15px;
     text-transform: uppercase;
     z-index: 1;
 }
@@ -750,10 +798,12 @@ footer {
 .footer_rows {
     width: 90%;
     margin: 1em auto;
-    margin-bottom: 6em;
+    margin-bottom: 1em;
     gap: 1em;
 }
-
+.footer_rows div {
+    margin-bottom: 2em;
+}
 .footer_rows h2 {
     margin-bottom: 10px;
 }
@@ -777,6 +827,7 @@ footer {
 }
 .popular_courses {
     display: flex;
+    margin-bottom: 1em;
     align-items: center;
     gap: 10px;
 }
@@ -791,6 +842,9 @@ footer {
 .popular_courses--link:hover {
     color: var(--primary-color);
     transition: 200ms;
+}
+.subscribe {
+    width: 100%;
 }
 .subscribe input {
     height: 2.5em;
@@ -817,7 +871,7 @@ footer {
 .subscribe button i {
     transition: 300ms;
 }
-.subscribe button i:hover {
+.subscribe button:hover i {
     transform: rotate(45deg);
     transition: 300ms;
 }
