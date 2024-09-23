@@ -3,10 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        />
+
         <link rel="stylesheet" href="assets/stylesheets/header.css" />
         <link rel="stylesheet" href="assets/stylesheets/main.css" />
         <link rel="stylesheet" href="assets/stylesheets/footer.css" />
@@ -16,8 +13,19 @@
         />
         <link
             rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        />
+
+        <link
+            rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
         />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
         <title>Home | Indiatutors Online</title>
     </head>
@@ -81,8 +89,10 @@
         <!--------Header Markup Ends----------->
 
         <main>
+            <!--------Hero Markup Starts----------->
+
             <section class="hero">
-                <div class="swiper mySwiper">
+                <div class="swiper hero--carousel">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide slide-1">
                             <div class="image-overlay">
@@ -125,6 +135,9 @@
                     <div class="swiper-pagination"></div>
                 </div>
             </section>
+            <!--------Hero Markup Ends----------->
+
+            <!--------About Markup Starts----------->
 
             <section class="about">
                 <img
@@ -134,8 +147,10 @@
                 />
                 <div class="about--desciption">
                     <div class="about--title">
-                        <h1 class="title">ABOUT US</h1>
-                        <span class="title_background">ABOUT US</span>
+                        <h1 class="title">
+                            ABOUT US
+                            <span class="title_background">ABOUT US</span>
+                        </h1>
                     </div>
                     <h2 class="about--desciption_heading">
                         Academic and Non-Academic Courses
@@ -159,6 +174,257 @@
                             pocket.
                         </li>
                     </ul>
+                </div>
+            </section>
+            <!--------About Markup ends----------->
+
+            <section class="subject_carousel" id="IT_Tech">
+                <div class="subject_head">
+                    <h1 class="title">
+                        TECHNOLOGIES FOR KIDS
+                        <span class="title_background">COURSES</span>
+                    </h1>
+                    <a href="#" class="btn subject_carousel--category_btn"
+                        >View All</a
+                    >
+                </div>
+                <div class="swiper subjectSwiper">
+                    <div
+                        class="swiper-wrapper subject_carousel--swiper_wrapper"
+                    >
+                        <div
+                            class="swiper-slide subject_carousel--swiper_wrapper"
+                        >
+                            <div class="subject_card">
+                                <div class="subject_card--thumbnail-container">
+                                    <img
+                                        src="assets/images/ScratchCarouselCover.webp"
+                                        alt=""
+                                        class="subject_card--thumbnail"
+                                    />
+                                    <p class="subject_card--price">$10/hr</p>
+                                    <a
+                                        href="#"
+                                        class="subject_card--view_details"
+                                        ><i class="fas fa-link"></i
+                                    ></a>
+                                </div>
+                                <div class="subject_card--details">
+                                    <div class="subject_card--ratings">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="subject_card--date">
+                                        <i class="fas fa-clock"></i>
+                                        <span>19 May 2022</span>
+                                    </div>
+                                </div>
+                                <div class="subject_card--desc">
+                                    <a href="#" class="subject_card--link"
+                                        >Scratch Coding</a
+                                    >
+                                    <p class="subject_card--category">
+                                        IT Technologies
+                                    </p>
+                                </div>
+                                <hr style="color: rgb(177, 173, 173)" />
+                                <div class="subject_card--student_count">
+                                    <i class="far fa-user"></i>
+                                    <span>300 students</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="swiper-slide subject_carousel--swiper_wrapper"
+                        >
+                            <div class="subject_card">
+                                <div class="subject_card--thumbnail-container">
+                                    <img
+                                        src="assets/images/AIMLCarouselCover.webp"
+                                        alt=""
+                                        class="subject_card--thumbnail"
+                                    />
+                                    <p class="subject_card--price">$10/hr</p>
+                                    <a
+                                        href="#"
+                                        class="subject_card--view_details"
+                                        ><i class="fas fa-link"></i
+                                    ></a>
+                                </div>
+                                <div class="subject_card--details">
+                                    <div class="subject_card--ratings">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="subject_card--date">
+                                        <i class="fas fa-clock"></i>
+                                        <span>19 May 2022</span>
+                                    </div>
+                                </div>
+                                <div class="subject_card--desc">
+                                    <a href="#" class="subject_card--link"
+                                        >AI & ML</a
+                                    >
+                                    <p class="subject_card--category">
+                                        IT Technologies
+                                    </p>
+                                </div>
+                                <hr style="color: rgb(177, 173, 173)" />
+                                <div class="subject_card--student_count">
+                                    <i class="far fa-user"></i>
+                                    <span>300 students</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="swiper-slide subject_carousel--swiper_wrapper"
+                        >
+                            <div class="subject_card">
+                                <div class="subject_card--thumbnail-container">
+                                    <img
+                                        src="assets/images/JavaCarouselCover.webp"
+                                        alt=""
+                                        class="subject_card--thumbnail"
+                                    />
+                                    <p class="subject_card--price">$10/hr</p>
+                                    <a
+                                        href="#"
+                                        class="subject_card--view_details"
+                                        ><i class="fas fa-link"></i
+                                    ></a>
+                                </div>
+                                <div class="subject_card--details">
+                                    <div class="subject_card--ratings">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="subject_card--date">
+                                        <i class="fas fa-clock"></i>
+                                        <span>19 May 2022</span>
+                                    </div>
+                                </div>
+                                <div class="subject_card--desc">
+                                    <a href="#" class="subject_card--link"
+                                        >Java</a
+                                    >
+                                    <p class="subject_card--category">
+                                        IT Technologies
+                                    </p>
+                                </div>
+                                <hr style="color: rgb(177, 173, 173)" />
+                                <div class="subject_card--student_count">
+                                    <i class="far fa-user"></i>
+                                    <span>300 students</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="swiper-slide subject_carousel--swiper_wrapper"
+                        >
+                            <div class="subject_card">
+                                <div class="subject_card--thumbnail-container">
+                                    <img
+                                        src="assets/images/RoboticsCarouselCover.webp"
+                                        alt=""
+                                        class="subject_card--thumbnail"
+                                    />
+                                    <p class="subject_card--price">$10/hr</p>
+                                    <a
+                                        href="#"
+                                        class="subject_card--view_details"
+                                        ><i class="fas fa-link"></i
+                                    ></a>
+                                </div>
+                                <div class="subject_card--details">
+                                    <div class="subject_card--ratings">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="subject_card--date">
+                                        <i class="fas fa-clock"></i>
+                                        <span>19 May 2022</span>
+                                    </div>
+                                </div>
+                                <div class="subject_card--desc">
+                                    <a href="#" class="subject_card--link"
+                                        >Robotics</a
+                                    >
+                                    <p class="subject_card--category">
+                                        IT Technologies
+                                    </p>
+                                </div>
+                                <hr style="color: rgb(177, 173, 173)" />
+                                <div class="subject_card--student_count">
+                                    <i class="far fa-user"></i>
+                                    <span>300 students</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="swiper-slide subject_carousel--swiper_wrapper"
+                        >
+                            <div class="subject_card">
+                                <div class="subject_card--thumbnail-container">
+                                    <img
+                                        src="assets/images/ScratchCarouselCover.webp"
+                                        alt=""
+                                        class="subject_card--thumbnail"
+                                    />
+                                    <p class="subject_card--price">$10/hr</p>
+                                    <a
+                                        href="#"
+                                        class="subject_card--view_details"
+                                        ><i class="fas fa-link"></i
+                                    ></a>
+                                </div>
+                                <div class="subject_card--details">
+                                    <div class="subject_card--ratings">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="subject_card--date">
+                                        <i class="fas fa-clock"></i>
+                                        <span>19 May 2022</span>
+                                    </div>
+                                </div>
+                                <div class="subject_card--desc">
+                                    <a href="#" class="subject_card--link"
+                                        >Scratch Coding</a
+                                    >
+                                    <p class="subject_card--category">
+                                        IT Technologies
+                                    </p>
+                                </div>
+                                <hr style="color: rgb(177, 173, 173)" />
+                                <div class="subject_card--student_count">
+                                    <i class="far fa-user"></i>
+                                    <span>300 students</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Navigation -->
+                    <div class="subject--swiper_next swiper_it--next">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="subject--swiper_prev swiper_it--prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
                 </div>
             </section>
         </main>
@@ -244,29 +510,39 @@
             </center>
         </footer>
         <!--------Footer Markup Ends----------->
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-        <!-- Initialize Swiper -->
         <script>
-            var swiper = new Swiper('.mySwiper', {
+            const subjectSwiper = new Swiper('.subjectSwiper', {
+                slidesPerView: 'auto',
+                spaceBetween: 20,
                 loop: true,
                 autoplay: {
-                    delay: 5000,
+                    delay: 3000, // Time between slides (in milliseconds)
+                    disableOnInteraction: false, // Autoplay will not be disabled after user interaction (e.g., swiping)
                 },
-
-                pagination: {
-                    el: '.swiper-pagination',
-                    dynamicBullets: true,
-                    clickable: true,
-                },
-
+                direction: 'horizontal',
                 navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
+                    nextEl: '.swiper_it--next',
+                    prevEl: '.swiper_it--prev',
+                },
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1,
+                    },
+                    620: {
+                        slidesPerView: 2,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                    },
+                    1440: {
+                        slidesPerView: 4,
+                    },
                 },
             });
         </script>
+
+        <script src="scripts/heroCarousel.js"></script>
         <script src="scripts/mobileMenu.js"></script>
     </body>
 </html>

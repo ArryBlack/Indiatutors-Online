@@ -293,7 +293,7 @@ nav {
 }
 .slide-2 a {
     opacity: 0;
-    animation: slideInFromLeft 1s ease forwards;
+    animation: slideInFromLeft 1.25s ease forwards;
 }
 .slide-3 h1 {
     opacity: 0;
@@ -303,9 +303,12 @@ nav {
 .slide-3 a {
     opacity: 0;
 
-    animation: slideInFromRight 1s ease forwards;
+    animation: slideInFromRight 1.25s ease forwards;
 }
 .swiper-slide-active h1 {
+    animation-delay: 0.5s; /* Delay to synchronize with slide transition */
+}
+.swiper-slide-active a {
     animation-delay: 0.5s; /* Delay to synchronize with slide transition */
 }
 .hero {
@@ -428,6 +431,156 @@ nav {
     }
 }
 /*Styling for hero section ends*/
+
+/*Styling for subject card starts*/
+/*Card Design*/
+.subject_card {
+    width: 100%;
+    max-width: 290px;
+    margin: 2em auto;
+    background-color: white;
+}
+.subject_card--thumbnail-container {
+    position: relative;
+    overflow: hidden;
+    height: 10em;
+}
+.subject_card--thumbnail {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.subject_card--price {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 1em;
+    position: absolute;
+    left: -100%; /* Start off the screen */
+    top: 10%;
+    transition: left 0.3s ease; /* Smooth transition for the price */
+}
+
+.subject_card--view_details {
+    position: absolute;
+    background-color: white;
+    color: var(--primary-color);
+    padding: 10px;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%; /* Centered initially */
+    transform: translate(-50%, -50%); /* Centering adjustment */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+.subject_card--view_details:hover {
+    color: white;
+    background-color: var(--primary-color);
+    transition: 200ms;
+}
+
+.subject_card--thumbnail-container:hover .subject_card--price {
+    left: 0; /* Move into view */
+}
+
+.subject_card--thumbnail-container:hover .subject_card--view_details {
+    opacity: 1; /* Fade in on hover */
+}
+.subject_card--details {
+    padding: 10px 1em;
+    justify-content: space-between;
+    display: flex;
+    margin-top: -5px;
+    background-color: var(--primary-color);
+}
+.subject_card--ratings {
+    color: #febd27;
+}
+.subject_card--date {
+    color: white;
+}
+.subject_card--desc {
+    text-align: center;
+    padding: 1em 0;
+}
+
+.subject_card--link {
+    color: black;
+    font-weight: 700;
+    transition: color 200ms;
+}
+.subject_card--link:hover {
+    color: var(--primary-color);
+    transition: color 200ms;
+}
+.subject_card--category {
+    margin: 1em 0;
+}
+.subject_card--student_count {
+    text-align: center;
+    padding: 1em 0;
+}
+.subject_card--student_count i + span {
+    margin-left: 6px;
+}
+/*Styling for subject card ends*/
+/*Styling for subject carousel starts*/
+.subject_head {
+    padding: 4px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+    flex-wrap: wrap;
+}
+.subject_carousel--category_btn {
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.subject_carousel {
+    background-color: var(--background-color);
+    padding: 0 6%;
+}
+
+.subject--swiper_next,
+.subject--swiper_prev {
+    cursor: pointer;
+    width: 30px; /* Adjust size as needed */
+    height: 30px;
+    background: var(--darker-gray); /* Background color */
+    color: var(--dark-accent);
+    border-radius: 50%; /* Circular buttons */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 30%; /* Center vertically */
+    transform: translateY(-50%);
+    z-index: 10; /* Ensure buttons are above slides */
+    opacity: 0.7;
+}
+.subject--swiper_next:hover,
+.subject--swiper_prev:hover {
+    opacity: 1;
+}
+
+.subject--swiper_next {
+    right: 10px;
+}
+
+.subject--swiper_prev {
+    left: 10px; /* Positioning */
+}
+@media (max-width: 500px) {
+    .subject--swiper_next {
+        display: none;
+    }
+
+    .subject--swiper_prev {
+        display: none;
+    }
+}
+/*Styling for subject carousel ends*/
+
 /*Styling for about section starts*/
 .about {
     padding: 3em 6%;
@@ -458,9 +611,9 @@ nav {
 }
 .title_background {
     position: absolute;
-    top: 20px;
-    left: -10px;
-    font-size: 2rem;
+    top: 0;
+    left: 0;
+    font-size: 2.15rem;
     font-weight: 900;
     color: transparent;
     -webkit-text-stroke-width: 1px;
