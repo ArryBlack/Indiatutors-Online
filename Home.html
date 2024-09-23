@@ -14,6 +14,10 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
 
         <title>Home | Indiatutors Online</title>
     </head>
@@ -41,7 +45,9 @@
                         <a href=""> <i class="fa fa-instagram"></i></a>
                         <a href=""> <i class="fa fa-youtube"></i></a>
                     </div>
-                    <a href="/BookDemo.html" class="btn">BOOK A DEMO</a>
+                    <a href="/BookDemo.html" class="header_btn btn"
+                        >BOOK A DEMO</a
+                    >
                 </div>
             </div>
             <nav>
@@ -74,7 +80,88 @@
         </header>
         <!--------Header Markup Ends----------->
 
-        <main></main>
+        <main>
+            <section class="hero">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide-1">
+                            <div class="image-overlay">
+                                <h1>
+                                    LIVE INTERACTIVE <br />
+                                    <span>ONLINE CLASSES</span>
+                                    <br /><br />
+                                    ACADEMIC <br />
+                                    & NON-ACADEMIC <br />
+                                    COURSES
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-2">
+                            <div class="image-overlay">
+                                <h1>
+                                    EDUCATORS <br />
+                                    YOU CAN TRUST
+                                </h1>
+                                <a href="#" class="btn hero--carousel_btn"
+                                    >BROWSE OUR ONLINE COURSES BELOW</a
+                                >
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-3">
+                            <div class="image-overlay">
+                                <h1>
+                                    Refer & Earn <br />
+                                    New Parents
+                                    <br />Referral Policy
+                                </h1>
+                                <a href="#" class="btn hero--carousel_btn"
+                                    >BROWSE OUR ONLINE COURSES BELOW</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <section class="about">
+                <img
+                    src="assets/images/AboutUsImage1.webp"
+                    alt=""
+                    class="about--image"
+                />
+                <div class="about--desciption">
+                    <div class="about--title">
+                        <h1 class="title">ABOUT US</h1>
+                        <span class="title_background">ABOUT US</span>
+                    </div>
+                    <h2 class="about--desciption_heading">
+                        Academic and Non-Academic Courses
+                    </h2>
+                    <p class="about--desciption_paragraph">
+                        We offer a broad range of online learning in both core
+                        academic and non-academic & enrichment skills to our
+                        student community.
+                    </p>
+                    <ul class="about--desciption_list">
+                        <li>
+                            Our programs entail individually tailored curriculum
+                            and one-on-one interractive sessions designed to
+                            help children develop a renewed interest in
+                            learning.
+                        </li>
+                        <li>
+                            In selected areas including PSAT/SAT & High school
+                            academic courses, we provide learning in small
+                            groups to provide education affordable to every
+                            pocket.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
 
         <!--------Footer Markup Starts----------->
         <footer>
@@ -157,7 +244,29 @@
             </center>
         </footer>
         <!--------Footer Markup Ends----------->
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.mySwiper', {
+                loop: true,
+                autoplay: {
+                    delay: 5000,
+                },
+
+                pagination: {
+                    el: '.swiper-pagination',
+                    dynamicBullets: true,
+                    clickable: true,
+                },
+
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
         <script src="scripts/mobileMenu.js"></script>
     </body>
 </html>
