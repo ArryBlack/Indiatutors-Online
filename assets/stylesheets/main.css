@@ -334,15 +334,15 @@ nav {
 }
 
 .slide-1 {
-    background-image: url(/assets/images/CarouselImage1.webp);
+    background-image: url(assets/images/CarouselImage1.webp);
 }
 
 .slide-2 {
-    background-image: url(/assets/images/CarouselImage2.webp);
+    background-image: url(assets/images/CarouselImage2.webp);
 }
 
 .slide-3 {
-    background-image: url(/assets/images/CarouselImage3.webp);
+    background-image: url(assets/images/CarouselImage3.webp);
 }
 
 .image-overlay {
