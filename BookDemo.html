@@ -79,7 +79,339 @@
         </header>
         <!--------Header Markup Ends----------->
 
-        <main style="display: none"></main>
+        <main style="display: none">
+            <div class="form_container">
+                <div class="form_header">
+                    <h1>Book a Free demo class</h1>
+                    <p>One-on-one session with world class tutors</p>
+                </div>
+                <form action="">
+                    <div class="form_section" id="parents_info">
+                        <h2 class="form_section--heading">
+                            Parent's Information
+                        </h2>
+                        <div class="form_row" id="parent_name">
+                            <div class="form_element">
+                                <label for="parent_first_name"
+                                    >Parent's First Name*</label
+                                >
+                                <br />
+                                <input
+                                    type="text"
+                                    id="parent_first_name"
+                                    name="parent_first_name"
+                                    placeholder="Parent's First Name"
+                                    required
+                                />
+                            </div>
+                            <div class="form_element">
+                                <label for="parent_last_name"
+                                    >Parent's Last Name*</label
+                                >
+                                <br />
+                                <input
+                                    type="text"
+                                    id="parent_last_name"
+                                    name="parent_last_name"
+                                    placeholder="Parent's Last Name"
+                                    required
+                                />
+                            </div>
+                        </div>
+                        <div class="form_row" id="parent_contact">
+                            <div class="form_element">
+                                <label for="whatsapp_number"
+                                    >Whatsapp Number*</label
+                                >
+                                <br />
+                                <select id="country_code" required>
+                                    <option selected="">+1(US/CA)</option>
+                                    <option value="+91">+91(IND)</option>
+                                    <option value="44">+44(UK)</option>
+                                    <option value="61">+61(AU)</option>
+                                    <option value="33">+33(FR)</option>
+                                    <option value="49">+49(DE)</option>
+                                    <option value="65">+65(SG)</option>
+                                    <option value="81">+81(JP)</option>
+                                    <option value="234">+234(NG)</option>
+                                    <option value="34">+34(ES)</option>
+                                    <option value="48">+48(PL)</option>
+                                    <option value="+47">+47(NO)</option>
+                                    <option value="+31">+31(NL)</option>
+                                </select>
+                                <input
+                                    type="text"
+                                    id="whatsapp_number"
+                                    name="whatsapp_number"
+                                    placeholder="Whatsapp Number"
+                                    required
+                                />
+                            </div>
+                            <div class="form_element">
+                                <label for="email">Parent's Email*</label>
+                                <br />
+                                <input
+                                    type="text"
+                                    id="parent_last_name"
+                                    name="parent_last_name"
+                                    placeholder="Parent's Email"
+                                    required
+                                />
+                            </div>
+                        </div>
+                        <div class="form_row">
+                            <label for="time_zone">Time Zone:</label>
+                            <select id="time_zone" required>
+                                <option value="">Select your Time Zone</option>
+                                <option>Eastern Standard Time</option>
+                                <option>Central Standard Time</option>
+                                <option>Mountain Standard Time</option>
+                                <option>Pacific Standard Time</option>
+                                <option>Singapore Time Zone (STZ)</option>
+                                <option>Japan Standard Time (JST)</option>
+                                <option>British Summer Time</option>
+                                <option>Central European Time</option>
+                                <option>
+                                    Australian Eastern Standard Time
+                                </option>
+                                <option>
+                                    Australian Central Standard Time
+                                </option>
+                                <option>
+                                    Australian Western Standard Time
+                                </option>
+                                <option>West Africa Standard Time(NGA)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form_section" id="student_info">
+                        <h2 class="form_section--heading">
+                            Student's Information
+                        </h2>
+                        <div class="form_row">
+                            <div class="form_element">
+                                <label for="student_first_name"
+                                    >Student's First Name*</label
+                                >
+                                <br />
+                                <input
+                                    type="text"
+                                    id="student_first_name"
+                                    name="student_first_name"
+                                    placeholder="Student's First Name"
+                                    required
+                                />
+                            </div>
+                            <div class="form_element">
+                                <label for="student_last_name"
+                                    >Student's Last Name*</label
+                                >
+                                <br />
+                                <input
+                                    type="text"
+                                    id="student_last_name"
+                                    name="student_last_name"
+                                    placeholder="Student's Last Name"
+                                    required
+                                />
+                            </div>
+                            <div class="form_element">
+                                <label for="student_age">Age*</label>
+                                <br />
+                                <input
+                                    type="text"
+                                    id="student_age"
+                                    name="student_age"
+                                    placeholder="Student's Age"
+                                    required
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_section" id="course_info">
+                        <h2 class="form_section--heading">
+                            Course Information
+                        </h2>
+                        <div class="form_element">
+                            <label for="courses">Choose your Course</label>
+                            <br />
+                            <select name="courses" id="courses">
+                                <optgroup label="Academics">
+                                    <option>
+                                        Academics - Mathematics K to 8
+                                    </option>
+                                    <option>
+                                        Academics - English Language K to 8
+                                    </option>
+                                    <option>
+                                        Academics - Kindergarten - Phonics
+                                    </option>
+                                    <option>
+                                        Academics - Maths - Pre-Algebra
+                                    </option>
+                                    <option>
+                                        Academics - Maths - Algebra I
+                                    </option>
+                                    <option>
+                                        Academics - Maths - Algebra II
+                                    </option>
+                                    <option>
+                                        Academics - Maths - Geometry
+                                    </option>
+                                    <option>
+                                        Academics - Maths - Pre-Calculus
+                                    </option>
+                                    <option>
+                                        Academics - Science - Grade 1-8
+                                    </option>
+                                    <option>
+                                        Academics - Science - High School
+                                        Chemistry
+                                    </option>
+                                </optgroup>
+                                <optgroup label="Musical Instrument">
+                                    <option>Musical Instrument - Guitar</option>
+                                    <option>Musical Instrument - Piano</option>
+                                    <option>
+                                        Musical Instrument - Keyboard
+                                    </option>
+                                    <option>
+                                        Musical Instrument - Flute, Violin
+                                    </option>
+                                    <option>Musical Instrument - Violin</option>
+                                    <option>Musical Instrument - Cello</option>
+                                    <option>
+                                        Musical Instrument - Saxophone
+                                    </option>
+                                    <option>Musical Instrument - Drum</option>
+                                    <option>
+                                        Musical Instrument - Ukelele
+                                    </option>
+                                    <option>
+                                        Musical Instrument - Clarinet
+                                    </option>
+                                    <option>
+                                        Musical Instrument - Trumpet
+                                    </option>
+                                    <option>Musical Instrument - Tabla</option>
+                                </optgroup>
+                                <optgroup label="Vocal Music">
+                                    <option>Vocal Music - Hindustani</option>
+                                    <option>Vocal Music - Carnatic</option>
+                                    <option>
+                                        Vocal Music - Western English
+                                    </option>
+                                </optgroup>
+                                <optgroup label="Competitive Exams">
+                                    <option>
+                                        Competitive Exams - Math Section-
+                                        PSAT/SAT - Lessons
+                                    </option>
+                                    <option>
+                                        Competitive Exams - English Section -
+                                        PSAT/SAT
+                                    </option>
+                                </optgroup>
+                                <optgroup label="IT Technologies">
+                                    <option>IT Technologies - Scratch</option>
+                                    <option>IT Technology - Python</option>
+                                    <option>IT Technology - JAVA</option>
+                                    <option>IT Technology - C++</option>
+                                    <option>IT Technology - Robotics</option>
+                                    <option>
+                                        IT Technology - Artificial Intelligence
+                                    </option>
+                                </optgroup>
+                                <optgroup label="High School AP Courses">
+                                    <option>AP Courses - AP Calculus AB</option>
+                                    <option>AP Courses - AP Calculus BC</option>
+                                    <option>AP Courses - AP Chemistry</option>
+                                    <option>AP Courses - AP Physics</option>
+                                    <option>AP Courses - AP Biology</option>
+                                    <option>Honors Courses - Biology</option>
+                                </optgroup>
+                                <optgroup label="Dances">
+                                    <option>Dance - Bollywood</option>
+                                    <option>Dance - Kuchipudi</option>
+                                    <option>Dance - Bharatnatyam</option>
+                                    <option>Dance - Kathak</option>
+                                    <option>Dance - Western</option>
+                                </optgroup>
+                                <optgroup label="Mind Sports">
+                                    <option>Mind Sports - Chess</option>
+                                    <option>Mind Sports - Rubik Cube</option>
+                                    <option>Mind Sports - Yoga</option>
+                                </optgroup>
+                                <optgroup label="Languages">
+                                    <option>Language - Spanish</option>
+                                    <option>Language - French</option>
+                                    <option>Language - German</option>
+                                    <option>Language - Mandarin</option>
+                                    <option>Language - Russian</option>
+                                    <option>Language - Sanskrit</option>
+                                    <option>Language - Hindi</option>
+                                    <option>Language - Kannada</option>
+                                    <option>Language - Tamil</option>
+                                    <option>Language - Telugu</option>
+                                    <option>Language - Chinese</option>
+                                    <option>Language - Malayalam</option>
+                                    <option>Art & Crafts - Painting</option>
+                                    <option>Public Speaking</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="form_element">
+                            <label for="special_message"
+                                >Special Message(if any)</label
+                            >
+                            <br />
+                            <input
+                                type="text"
+                                name="special_message"
+                                id="special_message"
+                                placeholder="Enter message here"
+                            />
+                        </div>
+                        <div class="form_element">
+                            <p>How did you hear about us?</p>
+
+                            <div>
+                                <input
+                                    type="radio"
+                                    id="facebook"
+                                    name="referral"
+                                    value="facebook"
+                                />
+                                <label for="facebook">Facebook</label>
+                            </div>
+
+                            <div>
+                                <input
+                                    type="radio"
+                                    id="google"
+                                    name="referral"
+                                    value="google"
+                                />
+                                <label for="google">Google</label>
+                            </div>
+
+                            <div>
+                                <input
+                                    type="radio"
+                                    id="word_of_mouth"
+                                    name="referral"
+                                    value="word_of_mouth"
+                                />
+                                <label for="word_of_mouth">Word of Mouth</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit_button btn">
+                        Book Now
+                    </button>
+                </form>
+            </div>
+        </main>
 
         <!--------Footer Markup Starts----------->
         <footer style="display: none">
