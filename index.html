@@ -26,8 +26,12 @@
     </head>
     <style></style>
     <body>
+        <div class="loader">
+            <div class="spinner"></div>
+        </div>
+
         <!--------Header Markup Starts----------->
-        <header>
+        <header style="display: none">
             <div class="contact_section">
                 <div class="row_left">
                     <div class="contact_number">
@@ -83,7 +87,7 @@
         </header>
         <!--------Header Markup Ends----------->
 
-        <main>
+        <main style="display: none">
             <!--------Hero Markup Starts----------->
 
             <section class="hero">
@@ -742,7 +746,7 @@
         </main>
 
         <!--------Footer Markup Starts----------->
-        <footer>
+        <footer style="display: none">
             <div class="footer_rows">
                 <div class="left_column">
                     <div class="indtutor_footer">
@@ -824,6 +828,7 @@
         </footer>
         <!--------Footer Markup Ends----------->
 
+        <script src="scripts/loaderAnimation.js"></script>
         <script src="scripts/subjectCarousel.js"></script>
 
         <script src="scripts/heroCarousel.js"></script>

@@ -20,7 +20,10 @@
 
     <body>
         <!--------Header Markup Starts----------->
-        <header>
+        <div class="loader">
+            <div class="spinner"></div>
+        </div>
+        <header style="display: none">
             <div class="contact_section">
                 <div class="row_left">
                     <div class="contact_number">
@@ -76,14 +79,14 @@
         </header>
 
         <!--------Header Markup Ends----------->
-        <section class="breadcrumbs">
+        <section class="breadcrumbs" style="display: none">
             <h1 class="breadcrumbs--heading">About Us</h1>
             <span
                 ><a href="index.html" class="breadcrumbs--link">Home</a>
                 <span class="breadcrumbs--arrows">>></span> About</span
             >
         </section>
-        <main>
+        <main style="display: none">
             <section class="about">
                 <img
                     src="assets/images/AboutUsImage1.webp"
@@ -180,7 +183,7 @@
         </main>
 
         <!--------Footer Markup Starts----------->
-        <footer>
+        <footer style="display: none">
             <div class="footer_rows">
                 <div class="left_column">
                     <div class="indtutor_footer">
@@ -261,7 +264,7 @@
             </center>
         </footer>
         <!--------Footer Markup Ends----------->
-
+        <script src="scripts/loaderAnimation.js"></script>
         <script src="scripts/mobileMenu.js"></script>
     </body>
 </html>
