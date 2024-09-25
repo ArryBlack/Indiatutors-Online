@@ -18,7 +18,6 @@ body {
     width: 100vw;
 }
 main {
-    min-height: 50vh;
     background-color: var(--background-color);
 }
 a {
@@ -752,6 +751,7 @@ nav {
 }
 .workshop {
     background-color: white;
+    margin: 2em auto;
 }
 .workshop--data {
     padding: 1em;
@@ -788,14 +788,15 @@ nav {
 }
 /*Styling for free workshops section ends*/
 /*Book Demo Form styling starts*/
-
+body {
+    background-color: var(--background-color);
+}
 .form_container {
     width: 80%;
     margin: 5em auto;
     border: 1px solid #ccc;
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
 }
 form {
     padding: 6%;
