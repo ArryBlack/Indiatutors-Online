@@ -722,26 +722,18 @@ nav {
     margin: 1em 0;
 }
 .founder {
-    margin-bottom: 2em;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 300px;
 }
 .founder--image {
     width: 100%;
-    max-width: 280px;
-    height: 360px;
     margin-bottom: 10px;
 }
 .founder--name {
     margin-bottom: 5px;
 }
-@media (min-width: 800px) {
-    .founders--container {
-        display: flex;
-        justify-content: space-evenly;
-    }
-    .founder {
-        width: 30%;
-    }
-}
+
 /*Styling for founders section ends*/
 
 /*Styling for free workshops section starts*/
