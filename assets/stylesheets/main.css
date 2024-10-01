@@ -14,12 +14,12 @@
     --darker-gray: #f2f4f6;
     font-family: 'Montserrat', sans-serif;
 }
+
 body {
+    background-color: var(--background-color);
     width: 100vw;
 }
-main {
-    background-color: var(--background-color);
-}
+
 a {
     text-decoration: none;
 }
@@ -780,9 +780,7 @@ nav {
 }
 /*Styling for free workshops section ends*/
 /*Book Demo Form styling starts*/
-body {
-    background-color: var(--background-color);
-}
+
 .form_container {
     width: 80%;
     margin: 5em auto;
