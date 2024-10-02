@@ -193,20 +193,7 @@ nav {
         text-decoration: none;
     }
 }
-@media (min-width: 1220px) {
-    .row_left::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: -30px; /* Adjust as needed */
-        transform: translateY(-50%);
-        width: 0;
-        height: 0;
-        border-top: 0 solid transparent; /* Triangle size */
-        border-bottom: 100px solid transparent; /* Triangle size */
-        border-left: 30px solid var(--primary-color); /* Triangle color */
-    }
-}
+
 /*Header Styling Ends*/
 
 /*Breadcrumb styling starts*/
