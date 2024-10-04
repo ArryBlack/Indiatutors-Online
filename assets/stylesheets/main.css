@@ -27,6 +27,11 @@ a {
 li {
     list-style: none;
 }
+.policy_documents {
+    width: 90%;
+    margin: 5em 0;
+    padding: 0 5%;
+}
 .btn {
     text-decoration: none;
     color: white;
@@ -904,7 +909,15 @@ footer {
     transition: 300ms;
 }
 .copyright_statement {
-    padding: 3em 0;
+    margin: 1em 0;
+}
+.footer_service_links {
+    color: white;
+    transition: 300ms;
+}
+.footer_service_links:hover {
+    color: var(--primary-color);
+    transition: 300ms;
 }
 @media (min-width: 700px) {
     .left_column {
