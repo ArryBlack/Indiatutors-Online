@@ -85,7 +85,11 @@
                     <h1>Book a Free demo class</h1>
                     <p>One-on-one session with world class tutors</p>
                 </div>
-                <form action="http://localhost:3000/submit" method="post">
+                <form
+                    action="http://localhost:3000/submit"
+                    method="post"
+                    class="book_demo--form"
+                >
                     <div class="form_section" id="parents_info">
                         <h2 class="form_section--heading">
                             Parent's Information
@@ -125,7 +129,7 @@
                                 >
                                 <br />
                                 <select id="country_code" required>
-                                    <option selected="">+1 (US/CA)</option>
+                                    <option value="+1">+1 (US)</option>
                                     <option value="+93">+93 (AF)</option>
                                     <option value="+355">+355 (AL)</option>
                                     <option value="+213">+213 (DZ)</option>
@@ -299,7 +303,6 @@
                                     <option value="+1">+1 (TT)</option>
                                     <option value="+256">+256 (UG)</option>
                                     <option value="+44">+44 (GB)</option>
-                                    <option value="+1">+1 (US)</option>
                                     <option value="+598">+598 (UY)</option>
                                     <option value="+998">+998 (UZ)</option>
                                     <option value="+678">+678 (VU)</option>
@@ -329,7 +332,7 @@
                             </div>
                         </div>
                         <div class="form_row">
-                            <!-----  <label for="time_zone">Time Zone:</label>
+                            <label for="time_zone">Time Zone:</label>
                             <select id="time_zone" required>
                                 <option value="">Select your Time Zone</option>
                                 <option value="UTC-12:00">
@@ -432,7 +435,7 @@
                                 <option value="UTC+14:00">
                                     UTC+14:00 (Line Islands, LINT)
                                 </option>
-                            </select>----->
+                            </select>
                         </div>
                     </div>
                     <div class="form_section" id="student_info">
@@ -470,10 +473,21 @@
                                 <label for="student_age">Age*</label>
                                 <br />
                                 <input
-                                    type="number"
+                                    type="text"
                                     id="student_age"
                                     name="student_age"
                                     placeholder="Student's Age"
+                                    required
+                                />
+                            </div>
+                            <div class="form_element">
+                                <label for="student_Grade">Grade*</label>
+                                <br />
+                                <input
+                                    type="text"
+                                    id="student_Grade"
+                                    name="student_Grade"
+                                    placeholder="Student's Grade"
                                     required
                                 />
                             </div>
@@ -607,7 +621,20 @@
                                 </optgroup>
                             </select>
                         </div>
-
+                        <div class="form_element">
+                            <input
+                                type="checkbox"
+                                name="accept_terms"
+                                id="accept_terms"
+                                required
+                            />
+                            <label for="accept_terms"
+                                >By signing up for the demo, you agree to
+                                recieve SMS, Whatsapp Messages and Emails from
+                                our team regarding the sessions and promotional
+                                offers</label
+                            >
+                        </div>
                         <input
                             type="submit"
                             value="Book Now"

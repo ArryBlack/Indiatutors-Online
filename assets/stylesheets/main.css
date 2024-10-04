@@ -767,113 +767,49 @@ nav {
 }
 /*Styling for free workshops section ends*/
 /*Book Demo Form styling starts*/
-
 .form_container {
-    width: 80%;
     margin: 5em auto;
-    border: 1px solid #ccc;
+    max-width: 500px;
+    box-shadow: 1px 1px 10px rgb(82, 79, 79);
     border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-form {
-    padding: 6%;
-}
-
 .form_header {
     background-color: var(--primary-color);
+    color: white;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-
-    color: white;
+    padding: 1em 5%;
     text-align: center;
-    position: relative; /* Allows it to sit at the top without sticky */
-    width: 100%; /* Ensures it spans the entire width */
-    top: 0; /* Positions it at the top */
-    z-index: 10; /* Keeps it above other elements */
 }
-
-.form_header h1,
-.form_header p {
-    margin: 0; /* Removes margins from header elements */
-    padding: 10px 0; /* Optional: Add some vertical padding */
+.form_header h1 {
+    margin-bottom: 0.7em;
 }
-
-.form_section {
-    margin: 25px 0; /* Increased vertical margin */
+.book_demo--form {
+    padding: 1em 5%;
 }
-
-.form_section--heading {
-    color: var(--primary-color);
-    margin-bottom: 10px;
-}
-
 .form_row {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 15px; /* Space between rows */
+    gap: 10px;
 }
-
-.form_element {
-    flex: 1 1 45%; /* Makes the elements responsive */
-    margin-right: 20px; /* Right margin for spacing */
+.form_section {
+    margin-bottom: 1.5em;
 }
-
-.form_element:last-child {
-    margin-right: 0; /* Removes margin for the last element */
+.form_section div {
+    margin-bottom: 10px;
 }
-
-input[type='text'],
-select {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+.book_demo--form input {
+    max-width: 80%;
 }
-
+.book_demo--form input {
+    padding: 5px 10px;
+}
 .submit_button {
-    padding: 1em 2em;
-    border-radius: 4px;
+    display: block;
     cursor: pointer;
-    font-size: 16px;
-    display: block; /* Ensures the button is a block element */
-    margin: 20px auto; /* Center the button */
-}
-
-input[type='radio'] {
-    margin-right: 5px; /* Adds space between radio button and label */
-}
-
-#parent_contact {
-    display: flex; /* Keep country code and WhatsApp number in the same line */
-    align-items: center; /* Center vertically */
-}
-
-#country_code {
-    flex: 0 0 30%; /* Set a specific width for country code */
-    margin-right: 10px; /* Space between select and input */
-}
-
-#whatsapp_number {
-    flex: 1; /* Takes the remaining width */
-}
-
-@media (max-width: 768px) {
-    .form_element {
-        flex: 1 1 100%; /* Stacks elements on smaller screens */
-        margin-right: 0; /* Removes margin for stacked elements */
-    }
-
-    #parent_contact {
-        flex-direction: column; /* Stacks country code and WhatsApp number */
-        align-items: flex-start; /* Aligns items to the start */
-    }
-
-    #country_code {
-        width: 100%; /* Full width on smaller screens */
-        margin-right: 0; /* Removes margin */
-    }
+    border-radius: 10px;
+    font-size: 1rem;
+    margin: 1em auto;
 }
 
 /*Book Demo Form styling ends*/
